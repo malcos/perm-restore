@@ -1,7 +1,10 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"runtime"
+)
 
 func main() {
-	fmt.Println("p-sync 0.0.0")
+	fmt.Printf("p-sync v0.0.1 on %s_%s\n", runtime.GOOS, runtime.GOARCH)
 }
